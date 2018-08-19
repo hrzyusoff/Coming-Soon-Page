@@ -1,0 +1,165 @@
+@font-face {
+    font-family: montserrat-black;
+    src: url("plugin/font/Montserrat-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url("plugin/font/Montserrat-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url("plugin/font/Montserrat-Light.otf") format("opentype");
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    /* margin-bottom: 6vh; */
+    overflow: hidden;
+    background-color: #EFEFEF;
+    font-family: "montserrat-bold";
+}
+
+.main-content,
+.card-content,
+.left-content,
+.right-content,
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    height: 94vh;
+}
+
+.card-container,
+.footer {
+    background-color: #F5F5F5;
+}
+
+.card-container {
+    height: 70vmin;
+    width: 110vmin;
+    padding: 2.5vmin;
+    border-radius: 12px;
+}
+
+.card-content {
+    flex-flow: row;
+}
+
+.left-content,
+.right-content {
+    height: 70vmin;
+    width: 100%;
+}
+
+.left-content {
+    /* font-size: 35px; */
+    border-right: 1px solid #e6e6e6;
+    font-family: "montserrat-black";
+    font-size: 4vmin;
+    color: #D1394B;
+}
+
+.right-content {
+    flex-flow: column;
+    color: #333333;
+}
+
+.right-title {
+    /* font-size: 24px; */
+    font-family: "montserrat-black";
+    font-size: 2.2vmin;
+}
+
+.right-description {
+    /* font-size: 18px; */
+    font-family: "montserrat-light";
+    font-size: 2vmin;
+}
+
+.right-description>a {
+    color: #333333;
+}
+
+.right-description>a:hover {
+    transition: 0.5s all;
+    color: #D1394B;
+}
+
+.right-description>a>i {
+    /* font-size: 36px; */
+    margin: 1.3vmin;
+    font-size: 3vmin;
+}
+
+.about,
+.portfolio,
+.contact {
+    flex-flow: column;
+}
+
+table {
+    margin: 1.2vmin 0 1.2vmin 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    border-top: 1px solid #d3d3d3;
+    font-family: "montserrat-light";
+    font-size: 1.5vmin;
+    color: #767676;
+    text-align: center;
+    line-height: 6vh;
+}
+
+@media (max-width: 1160px) {
+    .main-content {
+        overflow-y: scroll;
+    }
+    .main-content {
+        align-items: flex-start;
+    }
+    .card-container {
+        background-color: #EFEFEF;
+    }
+    .card-content {
+        flex-flow: column;
+    }
+    .left-content,
+    .right-content {
+        height: auto;
+        width: 100%;
+    }
+    .left-content {
+        border-right: none;
+        font-size: 35px;
+    }
+    .right-content {
+        margin-bottom: 80px;
+    }
+    .right-title {
+        font-size: 24px;
+    }
+    .right-description {
+        font-size: 18px;
+    }
+    .right-description>a>i {
+        font-size: 36px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}

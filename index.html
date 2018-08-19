@@ -7,84 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="64x64" href="hy.png">
   <!--css-->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="plugin/css/custom-loader.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="plugin/pagepiling/jquery.pagepiling.css" />
+  <link rel="stylesheet" href="style.css">
+  <!--js-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="plugin/pagepiling/jquery.pagepiling.js"></script>
+  <script type="text/javascript" src="plugin/js/main.js"></script>
 </head>
 
-<body onload="myFunction()">
-  <div id="loader">
-  </div>
-  <!-- Main Content -->
-  <div id="main-page" style="display: none">
-    <div class="main-content">
-      <div class="card-container animate-bottom">
-        <div class="card-content">
-          <div class="left-content">
-            <h1>COMING
-              <br>SOON!</h1>
-          </div>
-          <div class="right-content">
-            <div class="about">
-              <!-- ABOUT ME -->
-              <h3 class="right-title">ABOUT</h3>
-              <p class="right-description">Hello, my name is Muhammad Hariz.
-                <br> I am Software Engineering student.
-                <br> Passionate to art and code.
-              </p>
-              <!-- REACH ME AT -->
-              <h3 class="right-title">CONTACT</h3>
-              <div class="right-description">
-                <table>
-                  <tr>
-                    <td>Email</td>
-                    <td>:</td>
-                    <td>harizmdyusoff@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Phone</td>
-                    <td>:</td>
-                    <td>+60179396212</td>
-                  </tr>
-                </table>
-              </div>
-              <!-- PORTFOLIO -->
-              <h3 class="right-title">PORTFOLIO AND SOCIAL</h3>
-              <div class="right-description">
-                <a href="https://dribbble.com/hrzyusoff" target="_blank">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="https://github.com/hrzyusoff" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.behance.net/hrzyusoff" target="_blank">
-                  <i class="fab fa-behance-square"></i>
-                </a>
-                <a href="https://www.twitter.com/hrzyusoff" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hariz-yusoff-4a8997148/" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/hariz.yusoff.7" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+<body>
+  <div id="pagepiling">
+    <!-- <div class="main-navbar">
+      <div class="bar-container" onclick="togglebar(this)">
+        <div class="bar-top"></div>
+        <div class="bar-middle"></div>
+        <div class="bar-bottom"></div>
+      </div>
+    </div> -->
+    <div class="section home-container" id="home">
+      <div class="home-content">
+        <div class="section-title">
+          <p class="title-top">HI</p>
+          <p class="title-middle">I AM HARIZ</p>
+          <p class="title-bottom">FRONT END DEVELOPER</p>
+        </div>
+        <div class="section-button">
+          <button class="btn">Download Project</button>
+          <button class="btn">Download CV</button>
         </div>
       </div>
+      <div class="home-scroll">
+        <img class="home-scroll-icon" src="assets/scroll.svg" alt="scroll-icon" onclick="location.href='#about';">
+        <p class="home-scroll-title">scroll for more</p>
+      </div>
+    </div>
+    <div class="section about-container" id="#about">
+      <p class="section-subtitle">ABOUT<span>.</span></p>
+    </div>
+    <div class="section skills-container" id="#skills">
+      <p class="section-subtitle">SKILLS<span>.</span></p>
+    </div>
+    <div class="section education-container" id="#education">
+      <p class="section-subtitle">EDUCATION<span>.</span></p>
+    </div>
+    <div class="section experience-container" id="#experience">
+      <p class="section-subtitle">EXPERIENCE<span>.</span></p>
+    </div>
+    <div class="section portfolio-container" id="#portfolio">
+      <p class="section-subtitle">PORTFOLIO<span>.</span></p>
+    </div>
+    <div class="section contact-container" id="#contact">
+      <p class="section-subtitle">CONTACT<span>.</span></p>
     </div>
   </div>
-  <!-- End of Main Content -->
-  <!-- Footer -->
-  <footer class="footer">
-    <span class="text-muted">All Rights Reserved &copy Hariz Yusoff 2018 </span>
-  </footer>
-  <!-- End of Footer -->
-  <!--js-->
-  <script src="plugin/js/custom-loader.js"></script>
 </body>
 
 </html>
